@@ -69,7 +69,6 @@ export const getServerSideConfig = () => {
       .join(",");
   }
   if (customVisionModels) customVisionModels += ",";
-  console.log(`[Server Config2] using ${customVisionModels} `);
   const isAzure = !!process.env.AZURE_URL;
   const isGoogle = !!process.env.GOOGLE_API_KEY;
 
